@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+
+:root{
+    --descripcion: font-family: 'Open Sans', sans-serif;
+    --descripcionT: font-family: sans-serif;
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+body{
+    background: var(--fondo);
+}
+
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    padding: 30px;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;/* espace between nos hace permite que los elementos se pongan uno a la izquierda y otro a la derecha*/
+    align-items: center;/*para alinearlos veticalmente*/
+}
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: var(--rojo);
+    font-size: 2em;
+}
+
+
+a{
+    color: #AAA;
+    font-family: var(--descripcionT);
+    margin: 1.2em;
+}
+
+header .contenedor nav a:hover{
+    color: #FFF;
+}
+
+.pelicula{
+    margin-top: 16px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0,0,0, .5) 0%, rgba(0,0,0, .5) 100%), url(imagenes/interestellar.jpg);
+    background-position: center center;
+    padding-top: 12em;
+}
+
+.contenedor2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.pelicula .contenedor2 .descripcion{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: .04em;
+}
+
+.pelicula .contenedor2 .resena{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.botones button{
+    margin: .6em;
+    height: 2.1em;
+    padding-right: 8px;
+    background: rgba(0,0,0, .5);
+    border: none;
+    border-radius: .3em;
+    color: #FFF;
+    cursor: pointer;
+    transition: .4s ease all;
+
+}
+
+ i{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.botones button:hover{
+    background: rgba(0,0,0, .5);
+    border: none;
+    border-radius: .3em;
+    color: black;
+}
+
+
+@media screen and(max-width: 720px) {
+    header .contenedor{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pelicula .contenedor2 .resena{
+        max-width: 100%;
+    }
+    
+}
+
+
+
+
